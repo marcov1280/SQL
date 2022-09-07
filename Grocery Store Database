@@ -1,0 +1,14 @@
+CREATE TABLE bikes(ID INTEGER, NAME TEXT, COLOR TEXT, PRICE INTEGER, QUANTITY INTEGER);
+
+Insert into bikes values 
+(1, "mountain", "red", 200,11);
+
+Insert into bikes values 
+(1, "city", "blue", 200,4);
+Insert into bikes values 
+(1, "road", "red", 200,6);
+
+
+--display the database ordered by price. 
+Select sum(quantity) from bikes
+group by price;
